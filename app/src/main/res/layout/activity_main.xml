@@ -6,10 +6,22 @@
     android:layout_height="match_parent"
     tools:context="io.github.biswajee.qrcodescanner.MainActivity">
 
+    <SurfaceView
+        android:id="@+id/CameraViewer"
+        android:layout_marginTop="20px"
+
+        android:layout_width="match_parent"
+        android:layout_height="480px" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_below="@id/CameraViewer"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/default_text"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
